@@ -61,12 +61,12 @@ function groupPhases(group) {
             const teamBData = teams.find(t => t.Team === result.teamB.Team);
 
             if (result.winner === teamAData.Team) {
-                teamAData.points += 3;
+                teamAData.points += 2;
                 teamAData.wins += 1;
                 teamBData.points += 1;
                 teamBData.loses += 1;
             } else if (result.winner != teamAData.Team) {
-                teamBData.points += 3;
+                teamBData.points += 2;
                 teamBData.wins += 1;
                 teamAData.points += 1;
                 teamAData.loses += 1;
